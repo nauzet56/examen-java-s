@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Banderas</title>
+      <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="Comprobar">
+        <p>País 1 de 10: elige la bandera correcta</p>
+        <div class="imagenLugar">
+            <h4></h4>
+        </div>
+        
+
+        <button type= "button" class="emoji" id="paises_juego" >
+            
+        </button>
+         <button type= "button" class="emoji" id="paises_juego" >
+            
+        </button>
+         <button type= "button" class="emoji" id="paises_juego">
+            
+        </button>
+       
+        <button type="button" class="secondary" id="btnResetearFormulario">
+            Resetear
+        </button>
+    </div>
+
+    <div class="Resumen">
+        <h2>Resumen</h2>
+
+        Aciertos: <span id="aciertos">0</span><br>
+        Fallos: <span id="fallos">0</span><br>
+        Intentos <span id="intentos">0</span><br>
+        Pendientes: <span id="pendientes">10</span>
+        
+
+        <h2>Historial de respuestas</h2>
+        <table id="tablaHistorial">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Respuesta escrita</th>
+                    <th>Resultado</th>
+                  
+                
+            </thead>
+            <tbody id="historial"></tbody>
+        </table>
+    </div>
+<script src="js/datos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
